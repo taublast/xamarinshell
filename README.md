@@ -10,8 +10,11 @@ BottomTabs:
 - icons can use optional linear gradient, with optional direction
 - can add and customize notification badges
 - icons labels can be switch on/off
+- can change font and size of labels
 
 Added options support Xaml HotReload. 
 
-More info remains in ToDo state, meanwhile grab and use and see you in MAUI :)
+CustomizeShellToolbar renderer in present for purposes on how to customize it but not used in this example.
+
+Guess the description remains in ToDo state, meanwhile grab and use if needed and see you in MAUI :)
 

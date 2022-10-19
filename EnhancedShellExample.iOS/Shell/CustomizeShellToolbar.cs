@@ -7,7 +7,7 @@ using Xamarin.Forms.Platform.iOS;
 
 namespace AppoMobi.Framework.iOS.Renderers
 {
-    public class CustomizeNavigationBar : IShellNavBarAppearanceTracker, IDisposable
+    public class CustomizeShellToolbar : IShellNavBarAppearanceTracker, IDisposable
     {
         private UIColor _defaultBarTint;
 

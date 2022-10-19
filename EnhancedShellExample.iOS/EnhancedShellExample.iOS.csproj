@@ -66,7 +66,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Shell\CustomizeBottomMenuItems.cs" />
-    <Compile Include="Shell\CustomizeNavigationBar.cs" />
+    <Compile Include="Shell\CustomizeShellToolbar.cs" />
     <Compile Include="Shell\AppShellRenderer.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />

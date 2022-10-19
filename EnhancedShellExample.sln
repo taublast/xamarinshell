@@ -7,11 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnhancedShellExample.Androi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnhancedShellExample.iOS", "EnhancedShellExample.iOS\EnhancedShellExample.iOS.csproj", "{134EFE4C-BE7E-40B3-95DD-DCABA53C0A54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnhancedShellExample", "EnhancedShellExample\EnhancedShellExample.csproj", "{EC1C8539-AD32-4CDB-941F-C229335BB843}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnhancedShellExample", "EnhancedShellExample\EnhancedShellExample.csproj", "{EC1C8539-AD32-4CDB-941F-C229335BB843}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadMe", "ReadMe", "{EAC7C80A-2B81-4DC5-B575-FFE7307CFFF6}"
 	ProjectSection(SolutionItems) = preProject
 		About.txt = About.txt
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
