@@ -4,6 +4,8 @@ To demonstrate custom renderers for Xamarin.Shell.
 This example is actually targeting to customize bottom navigation tabs. 
 Grafics are powered by SkiaSharp.
 
+ ![image](https://user-images.githubusercontent.com/25801194/196616964-d7092708-fa93-4c23-80b2-fc9a14349841.png)
+
 BottomTabs:
 
 - using SVG icons
