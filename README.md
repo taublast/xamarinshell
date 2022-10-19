@@ -13,6 +13,7 @@ BottomTabs:
 - can add and customize notification badges
 - icons labels can be switched on/off
 - can change font and size of labels
+- tracks tab reselection event on Android (iOS is built-in)
 
 Added options support Xaml HotReload. 
 
