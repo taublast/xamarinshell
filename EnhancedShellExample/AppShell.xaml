@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<infrastructure:EnhancedShell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:EnhancedShellExample.Content.ViewModels;assembly=EnhancedShellExample"
+             xmlns:views="clr-namespace:EnhancedShellExample.Content.Views;assembly=EnhancedShellExample"
+             xmlns:infrastructure="clr-namespace:EnhancedShellExample.Infrastructure;assembly=EnhancedShellExample"
+
+             x:DataType="viewModels:StateViewModel"
+
+             TabsBadgeColor="Red"
+             TabsBadgeTextColor="White"
+             TabsBadgeTextSize="12"
+             TabsBadgeOffsetX="12"
+             TabsBadgeOffsetY="10"
+
+             TabBarHideLabels="False"
+             TabsLabelColor="AliceBlue"
+             TabsSelectedLabelColor="White"
+             TabBarLabelTextSize="10"
+             TabBarSelectedLabelTextSize="10"
+
+             TabBarIconSize="28"
+             TabsIconColor="#95FFFFFF"
+
+             TabsSelectedIconGradientStartColor="AliceBlue"
+             TabsSelectedIconGradientEndColor="{StaticResource ColorPrimaryLight}"
+             TabsSelectedIconGradientRotation="-25"
+
+             x:Class="EnhancedShellExample.AppShell">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource ColorPrimary}" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource ColorPrimary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+            </Style>
+
+            <Style BasedOn="{StaticResource BaseStyle}" TargetType="TabBar" />
+            <Style BasedOn="{StaticResource BaseStyle}" TargetType="FlyoutItem" />
+
+
+        </ResourceDictionary>
+    </Shell.Resources>
+
+
+ 
+
+    <!--DEFAULT UNAUTHORIZED-->
+    <ShellItem Route="login" FlyoutItemIsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate views:LoginPage}" />
+    </ShellItem>
+
+    <!--
+        If you would like to navigate to this content you can do so by calling
+        await Shell.Current.GoToAsync("//LoginPage");
+    -->
+    <TabBar Route="tabs" x:DataType="viewModels:StateViewModel">
+
+
+        <ShellContent
+            Route="AboutPage"
+            Title="About"
+            infrastructure:EnhancedShell.SvgString="{StaticResource SvgTabsHome}"
+            infrastructure:EnhancedShell.IconScaleX="0.95"
+            infrastructure:EnhancedShell.IconScaleY="0.95">
+
+            <views:AboutPage/>
+
+        </ShellContent>
+
+
+        <ShellContent
+            Title="Browse"
+            Route="Browse"
+            infrastructure:EnhancedShell.BadgeText="{Binding NotificationsSystem, 
+            Converter={StaticResource NotificationsConverter}}"
+            infrastructure:EnhancedShell.SvgString="{StaticResource SvgSettings}"
+            infrastructure:EnhancedShell.IconScaleX="0.98"
+            infrastructure:EnhancedShell.IconScaleY="0.98">
+
+            <views:ItemsPage/>
+
+        </ShellContent>
+
+       
+ 
+
+    </TabBar>
+
+
+
+</infrastructure:EnhancedShell>
