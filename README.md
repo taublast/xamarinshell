@@ -9,9 +9,9 @@ Grafics are powered by SkiaSharp.
 BottomTabs:
 
 - using SVG icons
-- icons can use optional linear gradient, with optional direction
+- icons can use optional linear gradient with optional direction
 - can add and customize notification badges
-- icons labels can be switch on/off
+- icons labels can be switched on/off
 - can change font and size of labels
 
 Added options support Xaml HotReload. 
